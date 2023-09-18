@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #def5f5;
+    overflow-y: scroll;
+}
+
+.homeTitleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10%;
+    width: 100vw;
+    border-bottom: #1a1a1a;
+}
+
+.homeTitleContainer {
+    position: relative;
+    padding-bottom: 10px; 
+  }
+  
+.homeTitleContainer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-255%);
+    width: 18%; 
+    border-bottom: 3px solid #000; 
+}
+
+.homeTitleContainer h1 {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+}
+
+
+.userData {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.userData p {
+    margin-left: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.userDataName {
+    margin-block: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.userDataEmail {
+    font-size: 2rem;
+}
+
+.gamesSectionTitle {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+}
+
+.userGames {
+    width: 100%;
+}
+
+.gamesContainer {
+    width: 100%;
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
